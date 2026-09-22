@@ -3,13 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage | Department of Information and Communication Technologies</title>
+    <title>Кафедра ІКТ - Головна</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Вітаємо на сайті кафедри Інформаційних і комунікаційних технологій ім. О.О.Зеленського!</h1>
-<p>Це перший тестовий варіант нашого навчального проекту.</p>
-<img src="images/logo.svg" alt="Логотип кафедри">
+
+<!-- Шапка сайта -->
+<header>
+    <div class="logo">
+        <img src="images/logo.svg" alt="Логотип кафедри ІКТ" title="Кафедра Інформаційно-комунікаційних технологій">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#specialties">Спеціальності</a></li>
+            <li><a href="#stats">Якщо в числах</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+            <li><a href="#science">Наука</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+            <li><a href="#news">Новини</a></li>
+        </ul>
+    </nav>
+    <div class="header-controls">
+        <button aria-label="Пошук">&#128269;</button>
+        <div class="lang-switch">
+            <a href="?lang=uk">UA</a> | <a href="?lang=en">EN</a>
+        </div>
+    </div>
+</header>
+
+<!-- Основной контент страницы -->
+<main>
+
+    <!-- 1. Баннер -->
+    <section id="banner">
+        <h1>Створюй майбутнє. Тут і зараз!</h1>
+        <p>Кафедра інформаційно-комунікаційних технологій №504</p>
+        <img src="images/banner.avif" alt="Студент за роботою" title="Навчання на кафедрі ІКТ">
+        <button>Дізнатися більше</button>
+    </section>
+
+    <!-- 2. Раздел специальностей -->
+    <section id="specialties">
+        <h2>Наші спеціальності</h2>
+        <p>Ми готуємо фахівців у сфері сучасних інформаційних технологій.</p>
+        <div class="specialty-cards">
+            <article class="card">
+                <h3>126</h3>
+                <p>Інформаційні системи і технології</p>
+            </article>
+            <article class="card">
+                <h3>172</h3>
+                <p>Електронні комунікації та радіотехніка</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- 3. Если в числах -->
+    <section id="stats">
+        <h2>Якщо в числах</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>18</h3>
+                <p>Дослідницьких лабораторій</p>
+            </div>
+            <div class="stat-item">
+                <h3>65</h3>
+                <p>Навчальних дисциплін</p>
+            </div>
+            <div class="stat-item">
+                <h3>1200+</h3>
+                <p>Талановитих випускників</p>
+            </div>
+            <div class="stat-item">
+                <h3>&infin;</h3>
+                <p>Унікального досвіду</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Отзывы (с аудио) -->
+    <section id="reviews">
+        <h2>#DICTExperience</h2>
+        <p>Відгуки випускників про навчання</p>
+        <div class="carousel">
+            <article class="review-card">
+                <p>"Навчання дало мені потужний старт у IT-індустрії."</p>
+                <h4>Випускник кафедри</h4>
+                <!-- Аудио-плеер -->
+                <audio controls title="Аудіо-відгук випускника">
+                    <source src="audio/feedback.mp3" type="audio/mpeg">
+                    Ваш браузер не підтримує аудіоелемент.
+                </audio>
+            </article>
+        </div>
+    </section>
+
+    <!-- 5. Научный раздел -->
+    <section id="science">
+        <h2>Наука та інновації</h2>
+        <h3>Від аудиторії — до реального проєкту</h3>
+        <p>Наші студенти залучаються до реальних наукових досліджень та розробок.</p>
+        <img src="images/banner.avif" alt="Графіки наукових досліджень" title="Інфографіка науки">
+        <button>Дослідити</button>
+    </section>
+
+    <!-- 6. Нам доверяют -->
+    <section id="partners">
+        <h2>Нам довіряють</h2>
+        <div class="partner-logos">
+            <p>NIX | EPAM | SoftServe | DataArt</p>
+        </div>
+    </section>
+
+    <!-- 7. Контакты -->
+    <section id="contacts">
+        <h2>Контакти</h2>
+        <address>
+            <p>61070, Харків, вул. Вадима Манька, 17</p>
+            <p>НАУ ім. М.Є. Жуковського "ХАІ"</p>
+            <p>Кафедра інформаційно-комунікаційних технологій №504</p>
+            <p>Телефон: <a href="tel:+380000000000">+38 (000) 000-00-00</a></p>
+            <p>Email: <a href="mailto:ict@khai.edu">ict@khai.edu</a></p>
+        </address>
+    </section>
+
+    <!-- 8. Новости (с видео) -->
+    <section id="news">
+        <h2>Новини</h2>
+        <div class="news-carousel">
+            <article class="news-card">
+                <h3>Останні події кафедри</h3>
+                <p>Короткий опис свіжих новин та анонсів заходів.</p>
+                <!-- Автопроигрываемое видео без кнопок управления -->
+                <video autoplay loop muted playsinline width="320">
+                    <source src="video/news.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відеоелемент.
+                </video>
+            </article>
+        </div>
+    </section>
+
+</main>
+
+<!-- Подвал страницы -->
+<footer>
+    <div class="footer-logo">
+        <img src="images/logo.svg" alt="Логотип кафедри ІКТ" title="Кафедра ІКТ">
+    </div>
+    <div class="footer-contacts">
+        <p>Харків, вул. Вадима Манька, 17</p>
+        <p>Email: ict@khai.edu</p>
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2026 Кафедра ІКТ №504. Всі права захищені.</p>
+    </div>
+</footer>
 
 <script src="js/main.js"></script>
 </body>
