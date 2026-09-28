@@ -1,16 +1,119 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage | Department of Information and Communication Technologies</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<h1>Вітаємо на сайті кафедри Інформаційних і комунікаційних технологій ім. О.О.Зеленського!</h1>
-<p>Це перший тестовий варіант нашого навчального проекту.</p>
-<img src="images/logo.svg" alt="Логотип кафедри">
+<!-- Раздел 2: Таблица образовательной программы (1 курс) -->
+<section id="curriculum">
+    <h2>1 Курс</h2>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>1 семестр</th>
+            <th>Кредиты</th>
+            <th>2 семестр</th>
+            <th>Кредиты</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Иноязычная коммуникация (Иностранный язык)</td>
+            <td>3.00</td>
+            <td>Иностранный язык</td>
+            <td>3.00</td>
+        </tr>
+        <tr>
+            <td>Украинские студии</td>
+            <td>3.00</td>
+            <td>Формирование системных мировоззренческих дисциплин (на выбор)</td>
+            <td>3.00</td>
+        </tr>
+        <tr>
+            <td>Правовая компетентность (на выбор)</td>
+            <td>3.00</td>
+            <td>Основы Кайдзен</td>
+            <td>3.00</td>
+        </tr>
+        <tr>
+            <td>Высшая математика</td>
+            <td>5.00</td>
+            <td>Высшая математика</td>
+            <td>4.00</td>
+        </tr>
+        <tr>
+            <td>Дискретная математика</td>
+            <td>4.00</td>
+            <td>Физика</td>
+            <td>4.00</td>
+        </tr>
+        <tr>
+            <td>Основы инфокоммуникаций</td>
+            <td>4.00</td>
+            <td>Алгоритмы и структуры данных</td>
+            <td>4.00</td>
+        </tr>
+        <tr>
+            <td>Программирование на Python</td>
+            <td>4.00</td>
+            <td>Программирование на Python</td>
+            <td>4.00</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Учебная практика</td>
+            <td>3.00</td>
+        </tr>
+        </tbody>
+    </table>
 
-<script src="js/main.js"></script>
-</body>
-</html>
+    <!-- Текстовое описание предметов под таблицей -->
+    <div class="description">
+        <p>
+            Первый предмет "Основы инфокоммуникаций" знакомит со сбором, передачей и обработкой информации...
+        </p>
+        <p>
+            Фундаментальный курс "Высшая математика", "Дискретная математика", "Физика" формируют основу для решения инженерных задач...
+        </p>
+    </div>
+</section>
+
+<!-- Раздел 3: Форма обратной связи для абитуриентов -->
+<section id="applicant-form">
+    <h2>Вступ 2025</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="fullname">ПІБ абітурієнта:</label><br>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="phone">Телефон:</label><br>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div>
+            <label for="nmt-math">Бал НМТ з Математики:</label><br>
+            <input type="number" id="nmt-math" name="nmt_math" min="100" max="200">
+        </div>
+
+        <div>
+            <label for="nmt-lang">Бал НМТ з Української мови:</label><br>
+            <input type="number" id="nmt-lang" name="nmt_lang" min="100" max="200">
+        </div>
+
+        <div>
+            <label for="nmt-history">Бал НМТ з Історії України:</label><br>
+            <input type="number" id="nmt-history" name="nmt_history" min="100" max="200">
+        </div>
+
+        <div>
+            <label for="motivation">Мотиваційний лист:</label><br>
+            <textarea id="motivation" name="motivation" rows="5" cols="40"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Надіслати заявку</button>
+        </div>
+    </form>
+</section>
