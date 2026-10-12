@@ -3,13 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage | Department of Information and Communication Technologies</title>
+    <title>Практична робота №4</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Вітаємо на сайті кафедри Інформаційних і комунікаційних технологій ім. О.О.Зеленського!</h1>
-<p>Це перший тестовий варіант нашого навчального проекту.</p>
-<img src="images/logo.svg" alt="Логотип кафедри">
+
+<!-- Раздел 1: Контент из прошлых работ -->
+<header>
+    <h1>Вітаємо на сайті кафедри Інформаційних і комунікаційних технологій ім. В. В. Поповського</h1>
+    <p>Це перший тестовий варіант нашого навчального проекту.</p>
+    <img src="images/logo.svg" alt="Логотип кафедри">
+</header>
+
+<main>
+    <!-- Раздел 2: Таблица образовательной программы (1 курс) -->
+    <section id="curriculum">
+        <h2>1 Курс</h2>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>1 семестр</th>
+                <th>Кредити</th>
+                <th>2 семестр</th>
+                <th>Кредити</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Іномовна комунікація (Іноземна мова)</td>
+                <td>3.00</td>
+                <td>Іноземна мова</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>Українські студії</td>
+                <td>3.00</td>
+                <td>Формування системних світоглядних дисциплін (на вибір)</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>Правова компетентність (на вибір)</td>
+                <td>3.00</td>
+                <td>Основи Кайдзен</td>
+                <td>3.00</td>
+            </tr>
+            <tr>
+                <td>Вища математика</td>
+                <td>5.00</td>
+                <td>Вища математика</td>
+                <td>4.00</td>
+            </tr>
+            <tr>
+                <td>Дискретна математика</td>
+                <td>4.00</td>
+                <td>Фізика</td>
+                <td>4.00</td>
+            </tr>
+            <tr>
+                <td>Основи інфокомунікацій</td>
+                <td>4.00</td>
+                <td>Алгоритми і структури даних</td>
+                <td>4.00</td>
+            </tr>
+            <tr>
+                <td>Програмування на Python</td>
+                <td>4.00</td>
+                <td>Програмування на Python</td>
+                <td>4.00</td>
+            </tr>
+            <tr>
+                <td>—</td>
+                <td>—</td>
+                <td>Навчальна практика</td>
+                <td>3.00</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- Текстовое описание предметов под таблицей -->
+        <div class="description">
+            <p>Перший предмет "Основи інфокомунікацій" знайомить зі збором, передачею й обробкою інформації.</p>
+            <p>Фундаментальні курси "Вища математика", "Дискретна математика", "Фізика" формують основу для рішення інженерних задач.</p>
+        </div>
+    </section>
+
+    <!-- Раздел 3: Форма обратной связи для абитуриентов -->
+    <section id="applicant-form">
+        <h2>Вступ 2025</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="fullname">ПІБ абітурієнта:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label><br>
+
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Телефон:</label><br>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <br>
+            <div>
+                <label for="nmt-math">Бал НМТ (Математика):</label><br>
+                <input type="number" id="nmt-math" name="nmt_math" min="100" max="200">
+            </div>
+            <br>
+            <div>
+                <label for="nmt-ukr">Бал НМТ (Українська мова):</label><br>
+                <input type="number" id="nmt-ukr" name="nmt_ukr" min="100" max="200">
+            </div>
+            <br>
+            <div>
+                <label for="nmt-history">Бал НМТ (Історія України):</label><br>
+                <input type="number" id="nmt-history" name="nmt_history" min="100" max="200">
+            </div>
+            <br>
+            <div>
+                <label for="motivation">Мотиваційний лист:</label><br>
+                <textarea id="motivation" name="motivation" rows="5" cols="40"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Надіслати форму</button>
+            </div>
+        </form>
+    </section>
+</main>
 
 <script src="js/main.js"></script>
 </body>
