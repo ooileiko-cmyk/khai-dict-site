@@ -6,3 +6,64 @@ body {
     margin: 50px auto;
     padding: 20px;
 }
+/* 2. body */
+body {
+    max-width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* 3. header */
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* 4. section (отступы между разделами 40px) */
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Наші спеціальності - карточки */
+.specialties-card,
+.specialty-card { /* проверьте имя класса в index.html */
+    padding: 20px;
+    border: 1px solid #8E8E8E;
+    border-radius: 20px;
+}
+
+/* Якщо в числах - карточки */
+.number-card,
+.numbers-card { /* проверьте имя класса в index.html */
+    padding: 10px;
+}
+.number-card:not(:last-child),
+.numbers-card:not(:last-child) {
+    border-left: 1px solid #FF3A3A;
+}
+
+/* Відгуки від випускників - карточки */
+.review-card,
+.reviews-card { /* проверьте имя класса в index.html */
+    padding: 20px;
+    border: 1px solid #8E8E8E;
+    border-radius: 20px;
+}
+
+/* Новини - карточки и блок с контентом внутри */
+.news-card:not(:last-child) { /* проверьте имя класса в index.html */
+    border-left: 1px solid #FF3A3A;
+}
+.news-card-content,
+.news-card .content { /* проверьте класс внутреннего блока */
+    padding: 10px;
+}
+
+/* 5. footer */
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
